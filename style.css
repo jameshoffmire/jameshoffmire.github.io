@@ -151,34 +151,85 @@ footer li {
 }
 
 #bluetext {
-  color: #0000cc;
+  color: white;
 }
 
 #mainitem {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
-  min-height: 100px;
   width: 85%;
+  height: auto;
+  min-height: 80px;
   background-color: hsla(120, 100%, 60%, 0.8);
   padding: 15px;
   border-radius: 25px;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 
 #projectInnerText{
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 50px;
 }
 
 #projectInnerText img{
-  width: 100%;
-  padding-top: 20px;
+  width: 80%;
   padding-bottom: 20px;
 }
 
 #mainitem h3 {
-  padding-bottom: 30px;
+  display: inline-block;
+  width: 80%;
+  float: left;
+}
+
+
+.downarrow {
+  display: inline-block;
+  background-image: url('./downarrow.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 20px;
+}
+
+.uparrow {
+  background-image: url('./uparrow.png');
+}
+
+
+.hide {
+  display: none;
+}
+
+
+@media only screen and (max-width: 770px) {
+  #bluetext  {
+    display: block;
+  }
+  footer .container {
+    display: block;
+  }
+  footer li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    align-self: center;
+  }
+  footer ul {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  footer {
+    text-align: center
+  }
+  header{
+    text-align: center
+  }
 }
