@@ -49,20 +49,8 @@
             <h5><b>Domain</b>: Computational photography, machine learning, functional programming, geometry</h5>
             <h5><b>Stack</b>: MATLAB</h5>
             <img src='./panoramic.jpg'>
-            <h5><b>Info</b>: This program takes as input a sequence of photographs where the right portion of each image overlaps with the left portion of the next image, and outputs one panoramic image stitched together from each of the images in the sequence. First, each of the images is mapped onto a cylinder that simulates the cylindrical field of view that is created by rotating a camera 360 degrees horizontally. This allows for objects that are in the center of one photograph but in the periphery of the next photograph to appear to at the same size and distance in each photograph.  The RANSAC algorithm then detects the portions of the photos that overlap and conjoins the two images together by setting the color of each pixel in the overlapping region as the average color of the corresponding pixels from each of the two images. The program finally uses Gaussian filtering to smooth out the pixels around the seams where the overlapping regions end. If you have MATLAB installed on your computer, you can download the code and execute it on your own sequence of photos.<h5>
+            <h5><b>Info</b>: This program takes as input a sequence of photographs where the right portion of each image overlaps with the left portion of the next image, and outputs one panoramic image stitched together from each of the images in the sequence. First, each of the input images is projected onto a cylinder. This allows for a clean and undistorted overlap between each pair of photos.  The RANSAC algorithm then iteratively detects the overlapping regions between each pair of photographs and conjoins all of the images together by setting the color of each pixel in the overlapping regions of the merged photo as the average color of the corresponding pixels from each of the two input images. The program finally uses feather filtering to smooth out the colors of pixels around the seams where the images were conjoined. If you have MATLAB installed on your computer, you can download the code and execute it on your own sequence of photos.<h5>
             <h5><a href='https://github.com/jameshoffmire/PanoramicRANSAC'>Gitub Repo</a></h5>
-          </div>
-        </div>
-        <div id='mainitem'>
-          <div class='phead'>
-            <h3>Travel App</h3>
-            <div class='downarrow'></div>
-          </div>
-        </div>
-        <div id='mainitem'>
-          <div class='phead'>
-            <h3>Travel App</h3>
-            <div class='downarrow'></div>
           </div>
         </div>
         <div id='mainitem'>
@@ -73,7 +61,7 @@
           <div id='projectInnerText' class='hide'>
             <h5><b>Domain</b>: front-end design, web development</h5>
             <h5><b>Stack</b>: HTML, CSS, Bootstrap</h5>
-            <h5><b>Info</b>: I have not spent a lot of time mastering front-end design. My skillset is full-stack but strongly leaning towards backend. However, I do think deeply about high level application design, including interface layout, functionality, use cases, navigation, and visual aesthetics. Even though I majored in CS, this is actually my first webstite that I built from scratch. It is just a simple HTML skeleton, but I had fun playing with color and styling and learning some new skills. I used Bootstrap to make the site responsive.</h5>
+            <h5><b>Info</b>: I have not spent a lot of time mastering front-end design. My skillset is full-stack but strongly leaning towards backend. However, I do think deeply about high level application design, including interface layout, functionality, use cases, navigation, and visual aesthetics. Even though I majored in CS, this is actually my first webstite that I built from scratch. It is just a simple HTML skeleton, but I had fun playing with color and styling and learning some new skills. I used Bootstrap to make the site responsive, and I used jQuery to ad some effects and design patterns to this page. </h5>
           </div>
         </div>
       </section>

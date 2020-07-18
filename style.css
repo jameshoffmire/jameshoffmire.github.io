@@ -176,8 +176,10 @@ footer li {
 }
 
 #projectInnerText img{
-  width: 80%;
+  width: 100%;
+  height: auto;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 #mainitem h3 {
